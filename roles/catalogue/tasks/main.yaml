@@ -36,6 +36,7 @@
 
 
 - name: start the service
-  include_role: common
-  tasks_from:
-    name: systemd_setup
+  include_role: 
+    name: common
+  tasks_from: systemd_setup
+  
