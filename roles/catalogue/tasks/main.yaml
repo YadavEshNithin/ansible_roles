@@ -7,7 +7,7 @@
 - name: nodejs setup  
   include_role:
     name: common
-    task_from: nodejs_setup
+    tasks_from: nodejs_setup
 
 
 - name: copy the repo file
@@ -37,5 +37,5 @@
 
 - name: start the service
   include_role: common
-  task_from:
+  tasks_from:
     name: systemd_setup
