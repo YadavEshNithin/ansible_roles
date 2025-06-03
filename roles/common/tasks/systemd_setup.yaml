@@ -1,0 +1,15 @@
+- name: copy the "{{ component }}" service file
+  ansible.builtin.template:
+    src: "{{ component }}.service"
+    dest: /etc/systemd/system/catalogue.service
+
+- name: restart the daemon_reload
+  ansible.builtin.systemd_service:
+    daemon_reload: true
+
+
+- name: start and enable the "{{ component }}" service
+  ansible.builtin.service:
+    name: "{{ component }}"
+    state: started
+    enabled: yes
