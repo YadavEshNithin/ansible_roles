@@ -1,10 +1,10 @@
-# MYSQL_HOST: mysql.rshopdaws84s.site
-# MYSQL_USER: root
-# MYSQL_PASSWORD: RoboShop@1  
-# CART_HOST: cart.rshopdaws84s.site
-
-
 MYSQL_HOST: mysql.rshopdaws84s.site
-MYSQL_ROOT_USER: root
-MYSQL_ROOT_PASSWORD: RoboShop@1
+MYSQL_USER: root
+MYSQL_PASSWORD: RoboShop@1  
 CART_HOST: cart.rshopdaws84s.site
+
+
+# MYSQL_HOST: mysql.rshopdaws84s.site
+# MYSQL_ROOT_USER: root
+# MYSQL_ROOT_PASSWORD: RoboShop@1
+# CART_HOST: cart.rshopdaws84s.site
