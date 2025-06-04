@@ -1,0 +1,32 @@
+- name: stop the "{{ component }}" service
+  ansible.builtin.service:
+    name: "{{ component }}"
+    state: stopped
+ 
+
+- name: remove the old code
+  ansible.builtin.file:
+    path: /app
+    state: absent
+
+
+- name: extract or unzip the code
+  ansible.builtin.unarchive:
+    src: https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v{{ app_version }}.zip
+    dest: /app
+    remote_src: yes
+  
+- name: add the new code
+  ansible.builtin.file:
+    path: /app
+    state: directory
+
+- name: install dependencies
+  community.general.npm:
+    path: /app
+
+
+- name: restart the "{{ component }}" service
+  ansible.builtin.service:
+    name: "{{ component }}"
+    state: restarted
