@@ -1,13 +1,13 @@
   - name: app setup
     include_role:
       name: common
-      task_from: app_setup
+      tasks_from: app_setup
 
 
   - name: maven setup
     include_role:
       name: common
-      task_from: maven_setup
+      tasks_from: maven_setup
 
 
 
@@ -29,7 +29,7 @@
 
   - name: start the service
     include_role: common
-    task_from:
+    tasks_from:
       name: systemd_setup
 
 
