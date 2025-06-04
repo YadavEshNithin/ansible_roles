@@ -9,7 +9,7 @@
     path: /app
     state: absent
 
-    
+
 - name: Create the app
   ansible.builtin.file:
     path: /app
@@ -28,8 +28,10 @@
     state: directory
 
 - name: install dependencies
+  tags:
+    deployment
   community.general.npm:
-    path: /app
+  path: /app
 
 
 - name: restart the "{{ component }}" service
