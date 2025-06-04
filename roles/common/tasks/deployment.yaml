@@ -9,6 +9,12 @@
     path: /app
     state: absent
 
+    
+- name: Create the app
+  ansible.builtin.file:
+    path: /app
+    state: directory
+
 
 - name: extract or unzip the code
   ansible.builtin.unarchive:
