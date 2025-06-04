@@ -22,6 +22,6 @@
 
 
   - name: rename the jar file
-    ansible.builtin.command: mv target/shipping-1.0.jar shipping.jar 
+    ansible.builtin.command: "mv target/{{ component }}-1.0.jar {{ component }}.jar" 
     args:
       chdir: /app
