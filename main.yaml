@@ -1,7 +1,7 @@
 - name: "{{ component }}"
   # hosts: "{{ component }}"
   hosts: localhost
-  connections: localhost
+  connection: localhost
   become: yes
   roles:
   - "{{ component }}"
