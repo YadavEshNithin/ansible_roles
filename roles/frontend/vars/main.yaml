@@ -1,3 +1,10 @@
+# CATALOGUE_HOST: catalogue.backend-{{ env }}.rshopdaws84s.site
+# USER_HOST: user.backend-{{ env }}.rshopdaws84s.site
+# CART_HOST: cart.backend-{{ env }}.rshopdaws84s.site
+# SHIPPING_HOST: shipping.backend-{{ env }}.rshopdaws84s.site
+# PAYMENT_HOST: payment.backend-{{ env }}.rshopdaws84s.site
+
+
 CATALOGUE_HOST: catalogue.backend-{{ env }}.rshopdaws84s.site
 USER_HOST: user.backend-{{ env }}.rshopdaws84s.site
 CART_HOST: cart.backend-{{ env }}.rshopdaws84s.site
