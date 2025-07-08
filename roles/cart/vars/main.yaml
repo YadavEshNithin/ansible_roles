@@ -1,2 +1,2 @@
-REDIS_HOST: redis.backend-{{ env }}.rshopdaws84s.site
+REDIS_HOST: redis-{{ env }}.rshopdaws84s.site
 CATALOGUE_HOST: catalogue.backend-{{ env }}.rshopdaws84s.site
